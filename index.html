@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
+<link rel="sisetu" href="sisetu.html">
+<style>
+
+  .wrap{
+    width: 1063px;
+    height: 890px;
+  }
+
+  /* パソコンで見たときは"pc"のclassがついた画像が表示される */
+  .pc { display: block !important; }
+  .sp { display: none !important; }
+
+ .fooder{
+   text-align: center;
+ }
+ .box{
+   padding-left: 280px;
+ }
+ .w-img{
+  width: 200px;
+  padding-left: 258px;
+  padding-top: 150px;
+ }
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+  .wrap{
+    width: 375px;
+    height: 600px;
+  }
+  .w-img{
+   width: 200px;
+   height: 150px;
+   padding-left: 77px;
+  }
+  .box{
+    padding-left:0;
+  }
+
+
+.pc { display: none !important; }
+.sp { display: block !important; }
+.d3 img { max-width: 100%; }
+
+.fooder{
+  margin-top: 100px;
+  text-align: left;
+  font-size: 15px;
+}
+}
+</style>
+</head>
+<body background="./web rogo/top.jpg">
+  <div class="wrap">
+    <div class="w-img">
+      <a href="home.html"><img class="pc" src="./web rogo/rogo1.png" alt=""><img class="sp" src="./web rogo/rogo3.png" alt="">
+      </a></div>
+
+
+      <div class="fooder">
+        <p>Copyright &copy; Human Academy All Rights Reserved.</p>
+      </div>
+  </div>
+
+
+<script src="jquery-3.2.1.min.js" ></script>
+  <script>
+
+  $(function(){
+    $(".b1").click(function(){
+      $(".d2").fadeToggle();
+    });
+    $(".b2").click(function(){
+      $(".d2").fadeToggle();
+    });
+    $(".b3").click(function(){
+      $(".d2").fadeToggle();
+    });
+    $(".b4").click(function(){
+      $(".d2").fadeToggle();
+    });
+    $(".b5").click(function(){
+      $(".d2").fadeToggle();
+    });
+
+
+  });
+
+  </script>
+</body>
+</html>
